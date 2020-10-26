@@ -1,0 +1,70 @@
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.top{
+  width: 100%;
+  height: 30vh;
+  background-color: white;
+}
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  border-radius: 50%;
+  float: left;
+}
+.title {
+  width: 100%;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+
+}
+.menu {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.menu-button {
+  width: 33% !important;
+
+}
+.line {
+  background-color: red;
+  width: 33%;
+  height: 4rpx;
+  margin-left: 33%;
+}
+.content {
+  float: left;
+  width: 100%;
+  margin-left: 20rpx;
+
+
+}
+.ranking {
+  float: left;
+  margin-left: 20rpx;
+
+}
+.attention {
+  float: left;
+  margin-left: 60rpx;
+
+}
+
+.scroll {
+  min-width: 100%;
+  height: 50vh;
+  bottom: 98rpx;
+  white-space: nowrap; /*不可缺少*/
+
+}
+.scroll-child{
+  width: 100%;
+  height: 100%;
+  display: inline-block; 
+}

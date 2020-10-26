@@ -1,0 +1,27 @@
+<view class="container">
+    <view class="top">
+       <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" ></image>
+       <view style="width:100%;float:left;">
+            <text id="mine" class="title">{{title}}</text>
+            <text class="content">{{content}}</text>
+            <text class="ranking">{{ranking}}</text>
+            <text class="attention">{{attention}}</text>
+       </view>
+       <button>设置</button>
+    </view>
+    
+    <view class="bottom">
+     <view class="menu">
+        <button class="menu-button" bindtap="clickTapWork">作品</button>
+        <button class="menu-button" bindtap="clickTapLike">喜欢</button>
+        <button class="menu-button" bindtap="clickTapNew">消息</button>
+     </view>
+     <view class="line" style="margin-left:{{marginLeft}}px"></view>
+      <scroll-view class="scroll" scroll-x="true" paingEnabled="true" eventhandle="true"  scroll-into-view="{{toView}}" scroll-left="{{scrollTop}}" bindtouchend="onTouchend">
+            <mine-works id="work" class="scroll-child"></mine-works>
+            <mine-likes id="like" class="scroll-child"></mine-likes>
+            <mine-news id="new" class="scroll-child"></mine-news>
+        </scroll-view>
+        
+    </view>
+</view>

@@ -1,0 +1,13 @@
+<view class="bg">
+      <text class="name">{{index}}</text>
+      <text class="title">{{title}}</text>
+      <button  class="content" bindtap="clickTap">button</button>
+</view>
+
+<template name="test-item">
+   <test-item
+        bind:clickTap='clickTap'
+        index='{{item.index}}'
+        title='{{item.title}}'
+      ></test-item>
+</template>

@@ -1,0 +1,9 @@
+<view class="container">
+    <block wx:for="{{datas}}" wx:for-item="item" wx:for-index="index">
+        <test-item
+        bind:clickTap='clickTap'
+        index='{{index}}'
+        title='{{item.title}}'
+        ></test-item>
+    </block>
+</view>

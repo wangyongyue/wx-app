@@ -1,0 +1,29 @@
+<view class="container">
+   <view class="header">
+      <text class="header-title">{{title}}</text>
+   </view>
+   <view class="content">
+       <view class="left" >
+            <button id="button" class="xuanxiang" >{{contentA}}</button>
+            <button id="button" class="xuanxiang" >{{contentB}}</button>
+            <button id="button" class="xuanxiang" >{{contentC}}</button>
+            <button id="button" class="xuanxiang" >{{contentD}}</button>
+      </view>
+      <view class="right">
+         <button id="button" class="right-button" bindtap="clickTap">提示</button>
+         <button id="button" class="right-button" bindtap="clickTap">解答</button>
+         <button id="button" class="right-button" bindtap="clickTap">喜欢</button>
+      </view>
+   </view>
+  
+</view>
+
+<template name="recommended-item">
+   <recommended-item 
+                title="{{item.title}}" 
+                contentA="{{item.contentA}}"
+                contentB="{{item.contentB}}"
+                contentC="{{item.contentC}}"
+                contentD="{{item.contentD}}"
+            ></recommended-item>
+</template>

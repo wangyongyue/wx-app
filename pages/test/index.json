@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "test-item":"/pages/test-item/index"
+
+  }
+}

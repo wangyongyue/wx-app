@@ -1,0 +1,25 @@
+<!--index.wxml-->
+<view >
+  <!-- <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view> -->
+  <view class="home" style="height:{{view.Height}}px;">
+      <recommended   wx:if="{{isRe}}"></recommended>
+      <followed wx:if="{{isFo}}"></followed>
+      <ranked wx:if="{{isRan}}"></ranked>
+      <mine wx:if="{{isMine}}"></mine>
+  </view>
+  
+
+  <view class="bottom">
+     <button id="button" class="button" bindtap="clickTapRe" >推荐</button>
+     <button id="button" class="button" bindtap="clickTapFo" >关注</button>
+     <button id="button" class="button" bindtap="clickTapAdd" >添加</button>
+     <button id="button" class="button" bindtap="clickTapRan" >排行</button>
+     <button id="button" class="button" bindtap="clickTapMine" >我的</button>
+  </view>
+</view>

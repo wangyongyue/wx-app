@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "followed":"/pages/followed/index",
+    "mine":"/pages/mine/index",
+    "ranked":"/pages/ranked/index",
+    "recommended":"/pages/recommended/index"
+  }
+}

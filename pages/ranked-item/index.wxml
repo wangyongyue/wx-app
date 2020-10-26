@@ -1,0 +1,17 @@
+<view class="bg" bindtap="clickTap">
+      <view class="header"></view>
+      <text class="name">{{name}}</text>
+      <text class="title">{{title}}</text>
+      <text class="content">{{content}}</text>
+
+</view>
+
+<template name="ranked-item">
+   <ranked-item
+        bind:clickTap='clickTap'
+        index='{{item.index}}'
+        name='{{item.name}}'
+        title='{{item.title}}'
+         content='{{item.content}}'
+      ></ranked-item>
+</template>

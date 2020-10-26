@@ -1,0 +1,16 @@
+<view class="container">
+    <scroll-view class="scroll" scroll-y="true" paingEnabled="true">
+    <block wx:for="{{list}}" wx:for-item="item">
+        <recommended-item 
+                title="{{item.title}}" 
+                contentA="{{item.contentA}}"
+                contentB="{{item.contentB}}"
+                contentC="{{item.contentC}}"
+                contentD="{{item.contentD}}"
+            ></recommended-item>
+    </block>
+    
+    </scroll-view>
+     
+      
+</view>

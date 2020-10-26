@@ -1,0 +1,7 @@
+{
+  "component": true, 
+  "usingComponents": {
+    "recommended-item":"/pages/recommended-item/index"
+
+  }
+}

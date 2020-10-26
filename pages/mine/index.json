@@ -1,0 +1,10 @@
+{
+  "component": true, 
+  "usingComponents": {
+    "recommended-item":"/pages/recommended-item/index",
+    "mine-works":"/pages/mine-works/index",
+    "mine-likes":"/pages/mine-likes/index",
+    "mine-news":"/pages/mine-news/index"
+
+  }
+}

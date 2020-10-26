@@ -1,0 +1,10 @@
+
+<import src="../ranked-item/index.wxml"/>
+<view class="container">
+    <scroll-view class="scroll" scroll-y="true" paingEnabled="true">
+    <block wx:for="{{datas}}" wx:for-item="item">
+       
+       <template is="{{item.component}}" data="{{item}}"></template>
+    </block>
+    </scroll-view>
+</view>
